@@ -2,14 +2,23 @@
 
 一个使用LaTex编写的简历模板，尽量使用了一些简单的LaTex语句，方便使用者改写。
 
-### 依赖
+### 使用
 
-+ 使用XeLatex编译
-+ 依赖包：ctex, titlesec, color, setspace, fontawesome
+编辑 `docker.env`：
 
-#### Fedora 25:
-+ 使用`dnf install texlive`安装texlive
-+ 使用`dnf install texlive-ctex`安装依赖包，其他包类似
+```shell
+# Fedora 的默认软件源在国内缓慢，建议配置代理
+# HTTP_PROXY="http://127.0.0.1:7890"
+# HTTPS_PROXY="https://127.0.0.1:7890"
+
+FILENAME="example" # 待编译的文件名
+```
+
+运行：
+
+```shell
+docker-compose up
+```
 
 ### 参考
 

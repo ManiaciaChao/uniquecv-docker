@@ -1,0 +1,8 @@
+version: "3"
+services:
+  uniquecv:
+    build: .
+    volumes:
+      - .:/src
+    env_file:
+      - docker.env
