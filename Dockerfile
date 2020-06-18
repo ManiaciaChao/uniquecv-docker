@@ -5,4 +5,3 @@ RUN dnf install -y texlive texlive-ctex \
   texlive-fontawesome texlive-xecjk texlive-fandol
 
 WORKDIR /src
-RUN xelatex ./${FILENAME}.tex
