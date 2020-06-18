@@ -1,8 +1,11 @@
-version: "3"
+version: "3.4"
 services:
   uniquecv:
-    build: .
+    build:
+      context: .
+      network: host
     volumes:
       - .:/src
+    command: xelatex ./$${FILENAME}.tex
     env_file:
       - docker.env
